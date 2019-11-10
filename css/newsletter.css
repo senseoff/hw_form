@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: #b9c5db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+}
+
+form {
+    /* min-width: 460px; удалить в прошлом макете */
+    width: 660px;
+    height: 380px; 
+    /* изменить с min на просто */
+    background-color: #353a45;
+    border-radius: 25px;
+    padding: 55px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.form__icon,
+.form__title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form__icon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 0;
+}
+
+.form__title {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 48px;
+    color: #538fff;
+    display: block;
+}
+
+.form__subtitle {
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.form__input {
+    display: block;
+    font-size: 20px;
+    height: 55px;
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    line-height: 1;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 40px 0 25px 0;
+}
+
+.row__item + .row__item {
+    margin-left: 20px;
+}
+
+.row__input {
+    width: 100%;
+}
+
+.form__btn {
+    display: block;
+    background-color: #538fff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    height: 55px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all .25s ease-in;
+    margin-bottom: 15px;
+}
+
+.form__safe {
+    font-size: 20px;
+    font-style: italic;
+    color: #787d87;
+}
+
+.form__btn:hover,
+.form__btn:focus,
+.form__btn:active {
+    background-color: #8e76c1;
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: #e5eeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+form {
+    /* min-width: 460px; удалить в прошлом макете */
+    width: 400px;
+    height: 500px; 
+    /* изменить с min на просто */
+    /* background-color: #2d22a9; */
+    background-image: url(../img/background.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 60px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+}
+
+.form__header {
+    margin-bottom: 50px;
+}
+
+.form a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .05s ease-in;
+}
+
+.form__header a {
+    opacity: .8;
+    padding-bottom: 2px;
+    
+}
+
+.form__header a:hover,
+.form__header a:focus,
+.form__header a:active {
+    opacity: 1;
+    border-bottom: 2px solid #e66a64;
+}
+
+.form__join {
+    margin-left: 10px;
+}
+
+.form__input {
+    display: block;
+    font-size: 20px;
+    height: 38px;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 10px 0 16px 0;
+    border: solid 2px #a288c9;
+    line-height: 1;
+    background-color: transparent;
+    transition: all .25s ease-in;
+    color: #e3d0ff;
+}
+
+.form__label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form__input:focus {
+    outline: none;
+    border-color: #fff;
+    color: #fff;
+}
+
+.form__button {
+    margin: 35px 0;
+}
+
+.form__btn {
+    display: block;
+    background-color: #23ae92;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    height: 42px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all .25s ease-in;
+    margin-bottom: 15px;
+}
+
+.form__btn:hover,
+.form__btn:focus,
+.form__btn:active {
+    background-color: #03997b;
+}
+
+.form__dbuttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__dbuttons a {
+    font-size: 11px;
+    font-weight: normal;
+    color: #8c83c1;
+    letter-spacing: 2px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #8c83c1;
+    transition: all .25s ease-in;
+}
+
+.form__dbuttons a:hover,
+.form__dbuttons a:focus,
+.form__dbuttons a:active {
+    color: #fff;
+    border-color: #fff;
+}
+
+.custom_checkbox input {
+    visibility: hidden;
+    position: absolute;
+}
+
+.custom_checkbox label{
+    position: relative;
+}
+.custom_checkbox label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #23ae92;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+input:checked + label:before {
+    background-image: url(../img/check.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
